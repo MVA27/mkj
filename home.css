@@ -18,7 +18,7 @@ header{
 	padding: 5px;
 }
 
-/* =========Image========= */
+/* =========Inner Div========= */
 .inner_div_img{
 	margin: 8px;
 	padding: 5px;
@@ -28,8 +28,9 @@ header{
 	border-style: double;
 	border-color: white;
 	border-width: 1px;
-
 	border-radius: 5px;
+
+	background-color: rgba(0, 0, 0, 0.9);
 }
 .inner_div_img:hover{
 	margin: 8px;
@@ -40,8 +41,9 @@ header{
 	border-style: double;
 	border-color: #28559A;
 	border-width: 1px;
-
 	border-radius: 5px;
+
+	background-color: rgba(0, 0, 0, 0.9);
 }
 
 /* =========Bottom title========= */
@@ -53,6 +55,28 @@ header{
 
 	border-bottom-right-radius: 5px;
 	border-bottom-left-radius: 5px;
+}
+
+/* =========Help Button========= */
+#help_button_id{
+	position: fixed; top:90%; left:92%; right: 5%;
+	background-color: #FED701;
+	border: white 1px solid;
+	padding: 15px;
+	padding-top: 18px;
+	padding-bottom: 18px;
+	border-radius: 50%;
+	color: black;
+}
+#help_button_id:hover{
+	position: fixed; top:90%; left:92%; right: 5%;
+	background-color: #2538C3;
+	border: white 1px solid;
+	padding: 15px;
+	padding-top: 18px;
+	padding-bottom: 18px;
+	border-radius: 50%;
+	color: white;
 }
 
 /* =========Footer========= */

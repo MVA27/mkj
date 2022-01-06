@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<script type="text/javascript" src="add-product.js"></script>
 		<link rel="stylesheet" type="text/css" href="signup.css">
 		<title>Add Product</title>
 	</head>
@@ -15,14 +16,14 @@
 
 			<h2 style="text-align: center; color: #3778C2; font-size: xx-large;"> Upload new product </h2>
 			
-			<form action="" method="" id="id_signup_form">
+			<form action="" method="" id="id_signup_form" onsubmit="return validate()">
 				
 				<label for="product_type"> Product Type : </label>
 				<select id="product_type" name="productType" class="form_input_attribute">
-					<option value="">Type 1 </option>
-					<option value="">Type 2 </option>
-					<option value="">Type 3 </option>
-					<option value="">Type 4 </option>
+					<option value="">Type 1</option>
+					<option value="">Type 2</option>
+					<option value="">Type 3</option>
+					<option value="">Type 4</option>
 				</select>
 
 
@@ -67,8 +68,15 @@
 				<input type="submit" class="form_buttons"> 
 				<input type="reset" class="form_buttons" id="reset_button_id">
 			</form>
+		</div> 	
 
+
+	<footer>
+		<div style="padding: 2%; text-align: center;">
+				<a href="" style="color: white; font-size: 20px;">About us</a>
 		</div>
+	</footer>
+	
 
 	</body>
 

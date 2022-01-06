@@ -22,11 +22,22 @@ header{
 
 td{
 	color: white;
+	width: 25%;
+}
+td:hover{
+	border-style: solid;
+	border-color: #28559A;
+	border-width: 1px;
+	border-radius: 5px;
 }
 
 img{
 	width: 100%;	
 }
 p{
+	margin: 2px;
+}
+p:hover{
+	color: #28559A;
 	margin: 2px;
 }
