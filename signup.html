@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<link rel="stylesheet" type="text/css" href="signup.css">
+		<title>Signup</title>
+
+	</head>
+
+	<body>
+
+		<header>
+			
+			<h1 id="header_title"> Jewellery Store Management System </h1>
+
+		</header>
+
+
+		<div id="id_div_form">
+
+			<h2 style="text-align: center; color: #3778C2; font-size: xx-large;"> Signup as administrator </h2>
+
+			<form action="" method="GET" id="id_signup_form">
+				
+				<label for="user_first_name" title="Enter your first name">First Name : </label>
+				<input type="text" name="userFirstName" id="user_first_name" placeholder="Mehul" class="form_input_attribute" required>
+
+				<br><br>
+
+				<label for="user_last_name" title="Enter your last name">Last Name : </label>
+				<input type="text" name="userLastName" id="user_last_name" placeholder="Anvekar" class="form_input_attribute" required>
+
+
+				<br><br>
+
+				<label for="user_email" title="Enter your email">Email : </label>
+				<input type="email" name="userEmail" id="user_email" placeholder="anvekarmehul@gmail.com" class="form_input_attribute" header_title>
+
+				<br><br>
+
+				<label for="user_phone_number" title="Enter your phone number with country code">Phone Number : </label>
+				<input type="number" name="userPhoneNumber" id="user_phone_number" placeholder="918830274551" class="form_input_attribute" required>
+
+
+				<br><br>
+
+				<label for="user_gender" title="Enter your gender">Gender : </label>
+				<select id="user_gender" name="userGender" class="form_input_attribute" required>
+					<option>Male</option>
+					<option>Female</option>
+					<option>Others</option>
+				</select>
+
+				<br><br>
+
+				<label for="user_dob" title=" Enter your Date of Birth" >Date of Birth : </label>
+				<input type="date" name="userDateOfBirth" id="user_dob" class="form_input_attribute" required>
+
+				<br><br>
+
+				<label for="user_new_password" title="Enter a strong password">Create Password : </label>
+				<input type="password" name="userPassword" id="user_new_password" placeholder="*********" class="form_input_attribute" required>
+
+				<br><br>
+
+				<label for="user_confirm_password" title="Please don't copy paste">Confirm Password : </label>
+				<input type="password" name="userPasswordConfirm" id="user_confirm_password" placeholder="*********" class="form_input_attribute" required>
+
+
+				<br><br>
+
+				<label for="user_aadharcard_number" title="Enter your 12 digit Aadhar Card Number">Aadhar Card Number : </label>
+				<input type="number" name="userAadharCardNumber" id="user_aadharcard_number" placeholder="548550008000" class="form_input_attribute" required>
+
+				<br><br>
+
+				<label>Highest Qualification : </label>
+				<input type="radio" name="userHighestQualification" value="masters" id="HQ1"> 	<label for="HQ1">Masters </label> 
+				<input type="radio" name="userHighestQualification" value="bachelors" id="HQ2"> <label for="HQ2">Bachelors </label> 
+				<input type="radio" name="userHighestQualification" value="hssc" id="HQ3"> 		<label for="HQ3">HSSC </label>
+				<input type="radio" name="userHighestQualification" value="ssc" id="HQ4"> 		<label for="HQ4">SSC </label> 
+
+
+				<br><br>
+
+				<label for="user_idproof" title="PDF format is highly recommended">Upload your ID proof : </label>
+				<input type="file" name="userIdProofFile" id="user_idproof" required>
+
+
+				<br><br>
+				<input type="checkbox" name="userTermsAndConditions" id="user_termsandcond" value="true" required> 
+				<label for="user_termsandcond"> I have read the <a id="tnc_link_id" href="" target="_blank" title="Click here to read the terms and conditions" style="color: #05F4B7;"> <b><i>terms and conditions</i></b> </a> </label>
+
+				<br><br>
+				<input type="submit" value="Submit" class="form_buttons"> 
+				<input type="reset" value="Reset" class="form_buttons" id="reset_button_id">
+
+
+			</form>
+
+		</div>
+
+
+		<footer>
+			
+		</footer>
+
+	</body>
+
+</html>

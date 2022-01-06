@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="signup.css">
+		<title>Add Product</title>
+	</head>
+
+	<body>
+
+		<header>
+			<h1 id="header_title"> Jewellery Store Management System </h1>
+		</header>
+
+		<div id="id_div_form">
+
+			<h2 style="text-align: center; color: #3778C2; font-size: xx-large;"> Update existing product details</h2>
+			
+			<form action="" method="" id="id_signup_form">
+				
+				<label for="product_id" title="Enter unique product ID"> Product ID : </label>
+				<input type="number" name="productID" class="form_input_attribute" id="product_id" placeholder="1234">
+
+				<br><br>
+				<label for="product_type"> Product Type : </label>
+				<select id="product_type" name="productType" class="form_input_attribute">
+					<option value="">Type 1 </option>
+					<option value="">Type 2 </option>
+					<option value="">Type 3 </option>
+					<option value="">Type 4 </option>
+				</select>
+
+
+				<br><br>
+				<label for="product_customer_name" title="Customer's name to whome the product belongs"> Customer Name : </label>
+				<input type="text" name="productCustomerName" class="form_input_attribute" id="product_customer_name" placeholder=" Mehul">
+
+				<br><br>
+				<label for="product_customer_number" title="Customer's phone number with country code"> Customer Ph. Number : </label>
+				<input type="number" name="productCustomerNumber" class="form_input_attribute" id="product_customer_number" placeholder="918830274551">
+
+				<br><br>
+				<label for="product_price" title="Price of the product in rupees"> Product Price :  </label>
+				<input type="number" name="productPrice" class="form_input_attribute" id="product_price" placeholder="6999">
+
+
+				<br><br>
+				<label for="product_weight" title="Price of the product in grms"> Product Weight :  </label>
+				<input type="number" name="productWeight" class="form_input_attribute" id="product_weight" placeholder="69">
+
+				<br><br>
+				<label for="product_purity"> Purity :  </label>
+				<input type="radio" name="productPurity" class="form_input_attribute" value="24"> 24K
+				<input type="radio" name="productPurity" class="form_input_attribute" value="22" checked> 22K
+				<input type="radio" name="productPurity" class="form_input_attribute" value="18"> 18K
+
+				<br><br>
+				<label for="product_selling_date" title="Date at which product was sold"> Product sold on :  </label>
+				<input type="date" name="productSellingDate" class="form_input_attribute" id="product_selling_date">	
+
+
+				<br><br>
+				<label for="product_image" title="PNG format is highly recommended"> Upload Product Image : </label>
+				<input type="file" name="productImage" id="product_image">			
+
+
+				<br><br>
+				<label for="product_note" title="Enter only important text with minimum words"> Note :  </label>
+				<textarea rows="3" name="productNote" style="background-color: black; border: solid 1px #3778C2;"></textarea>
+
+				<br><br>
+				<input type="submit" class="form_buttons"> 
+				<input type="reset" class="form_buttons" id="reset_button_id">
+			</form>
+
+		</div>
+
+	</body>
+
+</html>

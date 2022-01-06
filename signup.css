@@ -1,0 +1,119 @@
+body{
+	margin: 0px;
+	background-color: black;
+}
+
+/* =========Header========= */
+header{
+	background-color: #3778C2;
+	padding: 10px;
+}
+#header_title{
+	background-color: #28559A;
+	color: white;
+
+	text-align: center;
+
+	margin: 0px;
+	padding: 5px;
+}
+
+/* =========Footer========= */
+footer{
+	background-color: #28559A;
+	color: white;
+}
+
+/* =========Pseudo Element Selection========= */
+h2::selection{
+	background-color: #3778C2;
+	color: black;
+}
+label::selection{
+	background-color: white;
+	color: #3778C2;
+}
+h2::first-letter{
+	color: red;
+	font-weight: bold;
+}
+
+/* =========Div Tag containing form========= */
+#id_div_form{
+	padding: 10px;
+}
+
+/* =========Form inside Div========= */
+#id_signup_form{
+	color: white;
+	font-family: monospace;
+	font-size: large;
+
+	text-align: center;
+	background-color: #12151F;
+	
+	width: 50%;
+
+	margin: 20px auto;
+	padding: 30px;
+
+	border-style: solid;
+	border-width: 1px;
+	border-color: #3778C2;
+	border-radius: 10px;
+}
+
+/* =========input attributes Form========= */
+.form_input_attribute{
+	padding: 2px;
+	
+	border-style: hidden hidden solid hidden;
+	border-width: 2px;
+	border-color: #28559A;
+
+	background-color: black;
+	color: white;
+}
+.form_input_attribute:focus{
+	border-style: hidden hidden solid hidden;
+	border-color: red;
+	border-style: 2px;
+}
+.form_input_attribute:hover{
+	border-style: hidden hidden solid hidden;
+	border-color: red;
+	border-style: 2px;
+}
+
+
+/* =========Form Buttons========= */
+.form_buttons{
+	padding: 5px;
+
+	border-style: hidden;
+	border-color: black;
+	border-width: 1px;
+	border-radius: 5px;
+	background-color: #28559A;
+	color: white;
+}
+.form_buttons:hover{
+	padding: 5px;
+
+	border-style: hidden;
+	border-color: black;
+	border-width: 1px;
+	border-radius: 5px;
+	background-color: green;
+	color: white;
+}
+#reset_button_id:hover{
+	padding: 5px;
+
+	border-style: hidden;
+	border-color: black;
+	border-width: 1px;
+	border-radius: 5px;
+	background-color: red;
+	color: white;
+}

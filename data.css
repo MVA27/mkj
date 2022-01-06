@@ -1,0 +1,32 @@
+body{
+	margin: 0px;
+	background-color: black;
+}
+
+/* Header */
+header{
+	background-color: #3778C2;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+#header_title{
+	background-color: #28559A;
+	color: white;
+
+	text-align: center;
+
+	margin: 0px;
+	padding: 5px;
+}
+
+td{
+	color: white;
+}
+
+img{
+	width: 100%;	
+}
+p{
+	margin: 2px;
+}

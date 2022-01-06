@@ -1,0 +1,64 @@
+body{
+	margin: 0px;
+	background-color: black;
+}
+
+/* =========Header========= */
+header{
+	background-color: #3778C2;
+	padding: 10px;
+}
+#header_title{
+	background-color: #28559A;
+	color: white;
+
+	text-align: center;
+
+	margin: 0px;
+	padding: 5px;
+}
+
+/* =========Image========= */
+.inner_div_img{
+	margin: 8px;
+	padding: 5px;
+
+	display: inline-block;
+
+	border-style: double;
+	border-color: white;
+	border-width: 1px;
+
+	border-radius: 5px;
+}
+.inner_div_img:hover{
+	margin: 8px;
+	padding: 5px;
+
+	display: inline-block;
+
+	border-style: double;
+	border-color: #28559A;
+	border-width: 1px;
+
+	border-radius: 5px;
+}
+
+/* =========Bottom title========= */
+.logo_title{
+	padding: 0px;
+	margin: 0px;
+	color: white;
+	background-color: #28559A;
+
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+/* =========Footer========= */
+footer{
+	background-color: #28559A;
+	color: white;
+	padding: 5px;
+	margin: 0px;
+}

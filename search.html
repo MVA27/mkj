@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<link rel="stylesheet" href="signup.css">
+		<title>Search</title>
+
+		<style type="text/css">
+			dt{
+				color: white;
+				margin-top: 50px;
+				margin-left: 10px;
+				margin-bottom: 0px;
+				color: #3778C2;
+			}
+			dd{
+				color: white;
+				margin-top: 5px;
+			}
+			a{
+				background-color: #3778C2;
+				color: white;
+				padding: 3px;
+				border-radius: 5px;
+				text-decoration: none;
+				margin: 5px;
+			}
+			a:hover{
+				background-color: white;
+				color: #3778C2;
+				padding: 3px;
+				border-radius: 5px;
+				text-decoration: none;
+			}
+		</style>
+
+	</head>
+
+	<body>
+
+		<header>
+			<h1 id="header_title"> Jewellery Store Management System </h1>
+		</header>
+
+		<div style="display: inline-block; width: 30%;">
+			<dl>
+				<dt>Type 1</dt>
+				<dd> - This is type 1 <a href="data.html">Search</a> </dd>
+
+				<dt>Type 2</dt>
+				<dd> - This is type 2 <a href="data.html">Search</a></dd>
+
+				<dt>Type 3</dt>
+				<dd> - This is type 3 <a href="data.html">Search</a></dd>
+
+				<dt>Type 4</dt>
+				<dd> - This is type 4 <a href="data.html">Search</a></dd>
+
+				<dt>Type 5</dt>
+				<dd> - This is type 5 <a href="data.html">Search</a></dd>
+			</dl>	
+		</div>
+
+		<div style="display: inline-block; width: 60%;">
+			<form id="id_signup_form" action="" method="GET">
+				<h2 style="margin: 5px;">Search</h3>
+				<h6 style="margin: 5px; margin-bottom: 20px;">Enter at least one attribute</h6>
+
+				<label for="product_ID" title="Enter product ID">Product ID : </label>
+				<input type="number" name="productID" id="product_ID" placeholder="123" class="form_input_attribute" required>
+
+				<br><br>
+				<label for="product_customer_name" title="Customer's name to whome the product belongs"> Customer Name : </label>
+				<input type="text" name="productCustomerName" class="form_input_attribute" id="product_customer_name" placeholder=" Mehul">
+
+				<br><br>
+				<label for="product_customer_number" title="Customer's phone number with country code"> Customer Ph. Number : </label>
+				<input type="number" name="productCustomerNumber" class="form_input_attribute" id="product_customer_number" placeholder="918830274551">
+
+				<br><br>
+				<label for="product_price" title="Price of the product in rupees"> Product Price :  </label>
+				<input type="number" name="productPrice" class="form_input_attribute" id="product_price" placeholder="6999">
+
+
+				<br><br>
+				<label for="product_weight" title="Price of the product in grms"> Product Weight :  </label>
+				<input type="number" name="productWeight" class="form_input_attribute" id="product_weight" placeholder="69">
+
+				<br><br>
+				<label for="product_purity"> Purity :  </label>
+				<input type="radio" name="productPurity" class="form_input_attribute" value="24"> 24K
+				<input type="radio" name="productPurity" class="form_input_attribute" value="22" checked> 22K
+				<input type="radio" name="productPurity" class="form_input_attribute" value="18"> 18K
+
+				<br><br>
+				<label for="product_selling_date" title="Date at which product was sold"> Product sold on :  </label>
+				<input type="date" name="productSellingDate" class="form_input_attribute" id="product_selling_date">	
+
+				<br><br>
+				<input type="submit" class="form_buttons" value="search">
+			</form>
+		</div>
+
+	</body>
+</html>
