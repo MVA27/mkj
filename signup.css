@@ -1,6 +1,6 @@
 body{
 	margin: 0px;
-	background-color: black;
+	background-color: white;
 }
 
 /* =========Header========= */
@@ -27,15 +27,15 @@ footer{
 
 /* =========Pseudo Element Selection========= */
 h2::selection{
-	background-color: #3778C2;
-	color: black;
+	background-color: #FFB319;
+	color: white;
 }
 label::selection{
-	background-color: white;
-	color: #3778C2;
+	background-color: #FFB319;
+	color: white;
 }
 h2::first-letter{
-	color: red;
+	color: #FFB319;
 	font-weight: bold;
 }
 
@@ -46,12 +46,12 @@ h2::first-letter{
 
 /* =========Form inside Div========= */
 #id_signup_form{
-	color: white;
+	color: black;
 	font-family: monospace;
 	font-size: large;
 
 	text-align: center;
-	background-color: #12151F;
+	background-color: #EBF6EF;
 	
 	width: 50%;
 
@@ -70,19 +70,19 @@ h2::first-letter{
 	
 	border-style: hidden hidden solid hidden;
 	border-width: 2px;
-	border-color: #28559A;
+	border-color: #28559A; 
 
-	background-color: black;
-	color: white;
+	background-color: #B8DFD8;
+	color: black;
 }
 .form_input_attribute:focus{
 	border-style: hidden hidden solid hidden;
-	border-color: red;
+	border-color: #FFB319;
 	border-style: 2px;
 }
 .form_input_attribute:hover{
 	border-style: hidden hidden solid hidden;
-	border-color: red;
+	border-color: #FFB319;
 	border-style: 2px;
 }
 

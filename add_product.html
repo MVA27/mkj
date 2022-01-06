@@ -16,14 +16,14 @@
 
 			<h2 style="text-align: center; color: #3778C2; font-size: xx-large;"> Upload new product </h2>
 			
-			<form action="" method="" id="id_signup_form" onsubmit="return validate()">
+			<form action="http://localhost/EXP/EXP6/PHP/AddProductScript.php" enctype="multipart/form-data" method="POST" id="id_signup_form" onsubmit="return validate()">
 				
 				<label for="product_type"> Product Type : </label>
 				<select id="product_type" name="productType" class="form_input_attribute">
-					<option value="">Type 1</option>
-					<option value="">Type 2</option>
-					<option value="">Type 3</option>
-					<option value="">Type 4</option>
+					<option value="1">Necklace</option>
+					<option value="2">Bracelet</option>
+					<option value="3">Bangle</option>
+					<option value="4">Ring</option>
 				</select>
 
 
@@ -62,7 +62,7 @@
 
 				<br><br>
 				<label for="product_note" title="Enter only important text with minimum words"> Note :  </label>
-				<textarea rows="3" name="productNote" style="background-color: black; border: solid 1px #3778C2;"></textarea>
+				<textarea rows="3" name="productNote" style="background-color: #B8DFD8; border: solid 1px #3778C2; color: black;"></textarea>
 
 				<br><br>
 				<input type="submit" class="form_buttons"> 

@@ -19,7 +19,7 @@
 
 			<h2 style="text-align: center; color: #3778C2; font-size: xx-large;"> Signup as administrator </h2>
 
-			<form action="options.html" method="GET" id="id_signup_form" onsubmit="return validate()">
+			<form action="http://localhost/EXP/EXP6/PHP/AddUserScript.php" method="POST" id="id_signup_form" onsubmit="return validate()" enctype="multipart/form-data">
 				
 				<label for="user_first_name" title="Enter your first name">First Name : </label>
 				<input type="text" name="userFirstName" id="user_first_name" class="form_input_attribute">
@@ -46,9 +46,9 @@
 				<label for="user_gender" title="Enter your gender">Gender : </label>
 				<select id="user_gender" name="userGender" class="form_input_attribute">
 					<option value="">Choose an option</option>
-					<option>Male</option>
-					<option>Female</option>
-					<option>Others</option>
+					<option value="male">Male</option>
+					<option value="female">Female</option>
+					<option value="others">Others</option>
 				</select>
 
 				<br><br>
@@ -89,7 +89,7 @@
 
 				<br><br>
 				<input type="checkbox" name="userTermsAndConditions" id="user_termsandcond"> 
-				<label for="user_termsandcond"> I have read the <a id="tnc_link_id" href="" target="_blank" title="Click here to read the terms and conditions" style="color: #05F4B7;"> <b><i>terms and conditions</i></b> </a> </label>
+				<label for="user_termsandcond"> I have read the <a id="tnc_link_id" href="" target="_blank" title="Click here to read the terms and conditions" style="color: #FFB319;"> <b><i>terms and conditions</i></b> </a> </label>
 
 				<br><br>
 				<input type="submit" value="Submit" class="form_buttons"> 

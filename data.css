@@ -1,6 +1,6 @@
 body{
 	margin: 0px;
-	background-color: black;
+	background-color: white;
 }
 
 /* Header */
@@ -20,13 +20,14 @@ header{
 	padding: 5px;
 }
 
+/*Table*/
 td{
-	color: white;
+	color: black;
 	width: 25%;
 }
 td:hover{
 	border-style: solid;
-	border-color: #28559A;
+	border-color: #FFB319;
 	border-width: 1px;
 	border-radius: 5px;
 }
@@ -38,6 +39,6 @@ p{
 	margin: 2px;
 }
 p:hover{
-	color: #28559A;
+	color: #FFB319;
 	margin: 2px;
 }
