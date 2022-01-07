@@ -28,11 +28,11 @@
 	
 	function printHTML($state){
 		if($state == "success"){
-			echo "<script> alert('Data Insertion Successful'); location.href='http://localhost/EXP/EXP6/Home.html'; </script>";
+			echo "<script> alert('Data Insertion Successful'); location.href='http://localhost/EXP/EXP7/Home.html'; </script>";
 		}
 		
 		else{
-			echo "<script> alert('Data Insertion Failed'); location.href='http://localhost/EXP/EXP6/signup.html'; </script>";	
+			echo "<script> alert('Data Insertion Failed'); location.href='http://localhost/EXP/EXP7/signup.html'; </script>";	
 		}
 	}
 ?>

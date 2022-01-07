@@ -14,7 +14,7 @@
 				color: #3778C2;
 			}
 			dd{
-				color: white;
+				color: black;
 				margin-top: 5px;
 			}
 			.button_anchor{
@@ -42,32 +42,13 @@
 			<h1 id="header_title"> Jewellery Store Management System </h1>
 		</header>
 
-		<div style="display: inline-block; width: 30%;">
-			<dl>
-				<dt>Type 1</dt>
-				<dd> - This is type 1 <a class="button_anchor" href="data.html">Search</a> </dd>
-
-				<dt>Type 2</dt>
-				<dd> - This is type 2 <a class="button_anchor" href="data.html">Search</a></dd>
-
-				<dt>Type 3</dt>
-				<dd> - This is type 3 <a class="button_anchor" href="data.html">Search</a></dd>
-
-				<dt>Type 4</dt>
-				<dd> - This is type 4 <a class="button_anchor" href="data.html">Search</a></dd>
-
-				<dt>Type 5</dt>
-				<dd> - This is type 5 <a class="button_anchor" href="data.html">Search</a></dd>
-			</dl>	
-		</div>
-
-		<div style="display: inline-block; width: 60%;">
-			<form id="id_signup_form" action="" method="GET">
+		<div>
+			<form id="id_signup_form" action="data.php" method="GET">
 				<h2 style="margin: 5px;">Search</h3>
 				<h6 style="margin: 5px; margin-bottom: 20px;">Enter at least one attribute</h6>
 
 				<label for="product_ID" title="Enter product ID">Product ID : </label>
-				<input type="number" name="productID" id="product_ID" placeholder="123" class="form_input_attribute" required>
+				<input type="number" name="productID" id="product_ID" placeholder="123" class="form_input_attribute">
 
 				<br><br>
 				<label for="product_customer_name" title="Customer's name to whome the product belongs"> Customer Name : </label>
@@ -89,8 +70,9 @@
 				<br><br>
 				<label for="product_purity"> Purity :  </label>
 				<input type="radio" name="productPurity" class="form_input_attribute" value="24"> 24K
-				<input type="radio" name="productPurity" class="form_input_attribute" value="22" checked> 22K
+				<input type="radio" name="productPurity" class="form_input_attribute" value="22"> 22K
 				<input type="radio" name="productPurity" class="form_input_attribute" value="18"> 18K
+				<input type="radio" name="productPurity" class="form_input_attribute" value="-1" checked> N/A
 
 				<br><br>
 				<label for="product_selling_date" title="Date at which product was sold"> Product sold on :  </label>

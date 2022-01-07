@@ -29,11 +29,11 @@
 	
 	function printHTML($state){
 		if($state == "success"){
-			echo "<script> alert('Success'); location.href='http://localhost/EXP/EXP6/Home.html'; </script>";
+			echo "<script> alert('Success'); location.href='http://localhost/EXP/EXP7/Home.html'; </script>";
 		}
 		
 		else{
-			echo "<script> alert('Failed'); location.href='http://localhost/EXP/EXP6/add_product.html'; </script>";	
+			echo "<script> alert('Failed'); location.href='http://localhost/EXP/EXP7/add_product.html'; </script>";	
 		}
 	}
 ?>
