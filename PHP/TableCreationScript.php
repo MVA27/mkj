@@ -16,6 +16,10 @@
 	if($crnstName == "") $query = $query.")";
 	else $query = $query.",".$crnstName.")";
 
+	//Fetch Link
+	$data = simplexml_load_file('path.xml');
+	$link = $data->protocol.$data->ip.$data->path;
+
 	//Connect to Database
 	$connection = mysqli_connect("localhost","root","",$databaseName);
 	if($connection){
@@ -26,14 +30,10 @@
 		else printHTML("failed");
 	}
 	else{
-		echo "<script> alert('Connection Failed'); location.href='http://localhost/EXP/EXP7/add_table.html'; </script>";
+		echo "<script> alert('Connection Failed'); location.href='$link'; </script>";
 	}
 	
 	function printHTML($state){
-		
-		$pf = fopen('_path.txt','r');
-		$lines = file('_path.txt');
-		$link = $lines[0];
 		
 		if($state == "success"){
 			echo "<script> alert('Table Created Successfully'); location.href='$link'; </script>";

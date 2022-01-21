@@ -14,9 +14,8 @@
 	
 	function printHTML($state){
 		
-		$pf = fopen('_path.txt','r');
-		$lines = file('_path.txt');
-		$link = $lines[0];
+		$data = simplexml_load_file('path.xml');
+		$link = $data->protocol.$data->ip.$data->path;
 		
 		if($state == "success"){
 			echo "<script> alert('Record deleted'); location.href='$link'; </script>";

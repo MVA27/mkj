@@ -8,6 +8,10 @@
 	$productWeight = $_POST['productWeight'];
 	$productPurity = $_POST['productPurity'];
 	$productSellingDate = $_POST['productSellingDate'];
+	
+	//Fetch Link
+	$data = simplexml_load_file('path.xml');
+	$link = $data->protocol.$data->ip.$data->path;
 
 	//File upload logic
 	$productImageName = $_FILES['productImage']['name'];
@@ -37,7 +41,7 @@
 	$newLength = strlen($query);
 	
 	if($originalLength == $newLength){ //Query didnt change
-		echo "<script> alert('Please enter data that has to be updated'); location.href='http://localhost/EXP/EXP7/update_product.html' </script>";
+		echo "<script> alert('Please enter data that has to be updated'); location.href='$link'; </script>";
 	}
 	else{ //Query Changed
 		$query = trim($query,", ");
