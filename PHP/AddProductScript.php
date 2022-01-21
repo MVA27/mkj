@@ -28,12 +28,17 @@
 	}
 	
 	function printHTML($state){
+		
+		$pf = fopen('_path.txt','r');
+		$lines = file('_path.txt');
+		$link = $lines[0];
+		
 		if($state == "success"){
-			echo "<script> alert('Success'); location.href='http://localhost/EXP/EXP7/Home.html'; </script>";
+			echo "<script> alert('$link'); alert('Data Insertion Successful'); location.href='$link'; </script>";
 		}
 		
 		else{
-			echo "<script> alert('Failed'); location.href='http://localhost/EXP/EXP7/add_product.html'; </script>";	
+			echo "<script> alert('Data Insertion Failed'); location.href='$link'; </script>";	
 		}
 	}
 ?>

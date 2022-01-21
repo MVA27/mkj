@@ -15,7 +15,7 @@
 	
 	if($crnstName == "") $query = $query.")";
 	else $query = $query.",".$crnstName.")";
-		
+
 	//Connect to Database
 	$connection = mysqli_connect("localhost","root","",$databaseName);
 	if($connection){
@@ -30,12 +30,17 @@
 	}
 	
 	function printHTML($state){
+		
+		$pf = fopen('_path.txt','r');
+		$lines = file('_path.txt');
+		$link = $lines[0];
+		
 		if($state == "success"){
-			echo "<script> alert('Table Created Successfully'); location.href='http://localhost/EXP/EXP7/Home.html'; </script>";
+			echo "<script> alert('Table Created Successfully'); location.href='$link'; </script>";
 		}
 		
 		else{
-			echo "<script> alert('Table Creation Failed'); location.href='http://localhost/EXP/EXP7/add_table.html'; </script>";	
+			echo "<script> alert('Table Creation Failed'); location.href='$link'; </script>";	
 		}
 	}
 ?>

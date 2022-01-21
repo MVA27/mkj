@@ -54,12 +54,17 @@
 	}
 	
 	function printHTML($state){
+		
+		$pf = fopen('_path.txt','r');
+		$lines = file('_path.txt');
+		$link = $lines[0];
+		
 		if($state == "success"){
-			echo "<script> alert('Data updated successfully..!'); location.href='http://localhost/EXP/EXP7/Home.html'; </script>";
+			echo "<script> alert('Data updated successfully..!'); location.href='$link'; </script>";
 		}
 		
 		else{
-			echo "<script> alert('Failed to update data..!'); location.href='http://localhost/EXP/EXP7/update_product.htm'; </script>";	
+			echo "<script> alert('Failed to update data..!'); location.href='$link'; </script>";	
 		}
 	}
 ?>

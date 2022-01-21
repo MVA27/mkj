@@ -1,4 +1,6 @@
 <?php
+	require "ReadPath.php";
+	
 	$userFirstName = $_REQUEST['userFirstName'];
 	$userLastName = $_REQUEST['userLastName']; 
 	$userEmail = $_REQUEST['userEmail']; 
@@ -27,12 +29,17 @@
 	}
 	
 	function printHTML($state){
+		
+		$pf = fopen('_path.txt','r');
+		$lines = file('_path.txt');
+		$link = $lines[0];
+		
 		if($state == "success"){
-			echo "<script> alert('Data Insertion Successful'); location.href='http://localhost/EXP/EXP7/Home.html'; </script>";
+			echo "<script> alert('Data Insertion Successful'); location.href='$link'; </script>";
 		}
 		
 		else{
-			echo "<script> alert('Data Insertion Failed'); location.href='http://localhost/EXP/EXP7/signup.html'; </script>";	
+			echo "<script> alert('Data Insertion Failed'); location.href='$link'; </script>";	
 		}
 	}
 ?>

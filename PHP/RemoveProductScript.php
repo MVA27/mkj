@@ -13,12 +13,17 @@
 	}
 	
 	function printHTML($state){
+		
+		$pf = fopen('_path.txt','r');
+		$lines = file('_path.txt');
+		$link = $lines[0];
+		
 		if($state == "success"){
-			echo "<script> alert('Record deleted'); location.href='http://localhost/EXP/EXP7/Home.html'; </script>";
+			echo "<script> alert('Record deleted'); location.href='$link'; </script>";
 		}
 		
 		else{
-			echo "<script> alert('Deletion Failed'); location.href='http://localhost/EXP/EXP7/remove_product.html'; </script>";	
+			echo "<script> alert('Deletion Failed'); location.href='$link'; </script>";	
 		}
 	}
 ?>

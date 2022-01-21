@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<script type="text/javascript" src="add-product.js"></script>
 		<link rel="stylesheet" type="text/css" href="signup.css">
 		<title>Add Product</title>
 	</head>
@@ -12,11 +11,10 @@
 			<h1 id="header_title"> Jewellery Store Management System </h1>
 		</header>
 
-		<div id="id_div_form">
-
+		<div id="id_div_form" ng-controller="pathController">
 			<h2 style="text-align: center; color: #3778C2; font-size: xx-large;"> Upload new product </h2>
-			
-			<form action="http://localhost/EXP/EXP6/PHP/AddProductScript.php" enctype="multipart/form-data" method="POST" id="id_signup_form" onsubmit="return validate()">
+
+			<form action="PHP/AddProductScript.php" enctype="multipart/form-data" method="POST" id="id_signup_form">
 				
 				<label for="product_type"> Product Type : </label>
 				<select id="product_type" name="productType" class="form_input_attribute">
