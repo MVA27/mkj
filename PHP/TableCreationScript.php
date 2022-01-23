@@ -21,7 +21,8 @@
 	$link = $data->protocol.$data->ip.$data->path;
 
 	//Connect to Database
-	$connection = mysqli_connect("localhost","root","",$databaseName);
+	$db_cred = simplexml_load_file('db.xml');
+	$connection = mysqli_connect($db_cred->db_server,$db_cred->user_name,$db_cred->password,$db_cred->db_name);
 	if($connection){
 		echo "<script> alert('Successfully connected to Database'); </script>";	
 		

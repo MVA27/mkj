@@ -4,7 +4,8 @@
 
 	$query = "DELETE FROM PRODUCTS WHERE SRNO = '$productID'";
 
-	$connection = mysqli_connect("localhost","root","","WT_PROJECT");
+	$db_cred = simplexml_load_file('db.xml');
+	$connection = mysqli_connect($db_cred->db_server,$db_cred->user_name,$db_cred->password,$db_cred->db_name);
 	if($connection){
 		$result = mysqli_query($connection,$query);
 

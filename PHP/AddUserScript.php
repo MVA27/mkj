@@ -20,7 +20,8 @@
 	
 	$query = "INSERT INTO USERS(FIRST_NAME,LAST_NAME,EMAIL,PH_NUMBER,GENDER,DOB,PASSWORD,AADHAR_NO,QUALIFICATION,ID_PROOF) VALUES ('$userFirstName','$userLastName','$userEmail','$userPhoneNumber','$userGender','$userDateOfBirth','$userPassword','$userAadharCardNumber','$userHighestQualification','$fileLocation')";
 
-	$connection = mysqli_connect("localhost","root","","WT_PROJECT");
+	$db_cred = simplexml_load_file('db.xml');
+	$connection = mysqli_connect($db_cred->db_server,$db_cred->user_name,$db_cred->password,$db_cred->db_name);
 	if($connection){
 		$result = mysqli_query($connection,$query);
 
