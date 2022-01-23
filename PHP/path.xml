@@ -3,4 +3,6 @@
 	<protocol>http://</protocol>
 	<ip>localhost</ip>
 	<path>/projects/mkj/</path>
+	
+	<add_product>add_product.html</add_product>
 </Data>

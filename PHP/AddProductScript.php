@@ -30,10 +30,10 @@
 	function printHTML($state){
 		
 		$data = simplexml_load_file('path.xml');
-		$link = $data->protocol.$data->ip.$data->path;
+		$link = $data->protocol.$data->ip.$data->path.$data->add_product;
 		
 		if($state == "success"){
-			echo "<script> alert('$link'); alert('Data Insertion Successful'); location.href='$link'; </script>";
+			echo "<script> alert('Data Insertion Successful'); location.href='$link'; </script>";
 		}
 		
 		else{
